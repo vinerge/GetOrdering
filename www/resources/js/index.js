@@ -11,7 +11,7 @@ var app = {
 		  function (devices) {
 			window.DatecsPrinter.connect(devices[0].address, 
 			  function() {
-				window.DatecsPrinter.printText("Print Test!", 'ISO-8859-1');
+				printSomeTestText();
 			  },
 			  function() {
 				alert(JSON.stringify(error));
@@ -22,6 +22,14 @@ var app = {
 			alert(JSON.stringify(error));
 		  }
 		);
+		 
+		function printSomeTestText() {
+		  window.DatecsPrinter.printText("Print Test!", 'ISO-8859-1', 
+			function() {
+			  alert('Print complete');
+			}
+		  );
+		}
     }
 };
 
