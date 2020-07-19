@@ -10,11 +10,7 @@
     <content src="index.html" />
 	<preference name="phonegap-version" value="cli-9.0.0" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-	<plugin name="cordova-plugin-firebasex" spec="https://github.com/dpa99c/cordova-plugin-firebase" >
-        <variable name="FIREBASE_ANALYTICS_COLLECTION_ENABLED" value="false" />
-        <variable name="FIREBASE_PERFORMANCE_COLLECTION_ENABLED" value="false" />
-        <variable name="FIREBASE_CRASHLYTICS_COLLECTION_ENABLED" value="false" />
-        <variable name="SETUP_RECAPTCHA_VERIFICATION" value="true" />
+	<plugin name="cordova-plugin-firebasex" spec="latest" >
     </plugin>
     <access origin="*" />
     <allow-intent href="http://*/*" />

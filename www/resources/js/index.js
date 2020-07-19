@@ -5,6 +5,7 @@ var app = {
     },
 	
     onDeviceReady: function() {
+		alert('onDeviceReady');
 		var channel  = {
 			id: "NewOrder",
 			//sound: "NewOrder_Ringtone",
@@ -15,7 +16,7 @@ var app = {
 			badge: true,
 			visibility: 1
 		};
-		 
+		alert(FirebasePlugin);
 		FirebasePlugin.createChannel(channel,
 		function(){
 			alert('Channel created: ' + channel.id);
