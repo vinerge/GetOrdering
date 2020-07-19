@@ -98,8 +98,8 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-fcm-ng/admin-FCMPlugin.gradle"
 apply from: "../cordova-support-google-services/admin-build.gradle"
+apply from: "../cordova-plugin-fcm-ng/admin-FCMPlugin.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()

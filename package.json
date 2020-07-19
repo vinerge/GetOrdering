@@ -14,7 +14,7 @@
   "license": "Apache-2.0",
   "dependencies": {
     "cordova-android": "^8.1.0",
-    "cordova-plugin-fcm-ng": "^7.0.1",
+    "cordova-plugin-fcm-ng": "^5.1.1",
     "cordova-support-google-services": "1.4.1"
   },
   "devDependencies": {
@@ -23,8 +23,8 @@
   "cordova": {
     "plugins": {
       "cordova-plugin-whitelist": {},
-      "cordova-plugin-fcm-ng": {},
-      "cordova-support-google-services": {}
+      "cordova-support-google-services": {},
+      "cordova-plugin-fcm-ng": {}
     },
     "platforms": [
       "android"

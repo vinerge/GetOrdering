@@ -1,27 +1,27 @@
 {
-  "_from": "cordova-plugin-fcm-ng",
-  "_id": "cordova-plugin-fcm-ng@7.0.1",
+  "_from": "cordova-plugin-fcm-ng@5.1.1",
+  "_id": "cordova-plugin-fcm-ng@5.1.1",
   "_inBundle": false,
-  "_integrity": "sha512-1860AOuLTCaeeUqLbprxfVpzF3HsEjnSmZoA/pM/TS+n2lf4AFaoV/hx/rcqCsGjwR1sipRUACYhX+y5CUvxaw==",
+  "_integrity": "sha512-n4jBezzgXLSdOMOr9EhxoOr1pa2YMXlxXHHg9YlprlOWvpmQWAcikCRDp0lulcdilVFHBtmTu4xVgjG1HDL6FQ==",
   "_location": "/cordova-plugin-fcm-ng",
   "_phantomChildren": {},
   "_requested": {
-    "type": "tag",
+    "type": "version",
     "registry": true,
-    "raw": "cordova-plugin-fcm-ng",
+    "raw": "cordova-plugin-fcm-ng@5.1.1",
     "name": "cordova-plugin-fcm-ng",
     "escapedName": "cordova-plugin-fcm-ng",
-    "rawSpec": "",
+    "rawSpec": "5.1.1",
     "saveSpec": null,
-    "fetchSpec": "latest"
+    "fetchSpec": "5.1.1"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/cordova-plugin-fcm-ng/-/cordova-plugin-fcm-ng-7.0.1.tgz",
-  "_shasum": "01e59d77ea1e1760cce98390d7934c8d260418ef",
-  "_spec": "cordova-plugin-fcm-ng",
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-fcm-ng/-/cordova-plugin-fcm-ng-5.1.1.tgz",
+  "_shasum": "9ec107f44d1e00a215a44a339976cf660335b028",
+  "_spec": "cordova-plugin-fcm-ng@5.1.1",
   "_where": "C:\\Users\\wit_v\\Documents\\GitHub\\GetOrdering",
   "author": {
     "name": "Felipe Echanique Torres",
@@ -62,5 +62,5 @@
     "type": "git",
     "url": "git+https://github.com/cmgustavo/cordova-plugin-fcm.git"
   },
-  "version": "7.0.1"
+  "version": "5.1.1"
 }

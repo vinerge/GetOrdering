@@ -4,10 +4,6 @@
         <param name="android-package" value="org.apache.cordova.whitelist.WhitelistPlugin" />
         <param name="onload" value="true" />
     </feature>
-    <feature name="FCMPlugin">
-        <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
-        <param name="onload" value="true" />
-    </feature>
     <name>Get Ordering Admin</name>
     <description>
         App for restaurant owners to receive orders.
@@ -27,4 +23,8 @@
     <resource-file src="google-services.json" target="app/google-services.json" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="phonegap-version" value="cli-9.0.0" />
+    <feature name="FCMPlugin">
+        <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
+        <param name="onload" value="true" />
+    </feature>
 </widget>
