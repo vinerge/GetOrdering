@@ -16,8 +16,8 @@ var app = {
 			badge: true,
 			visibility: 1
 		};
-		alert(FirebasePlugin);
-		FirebasePlugin.createChannel(channel,
+		//alert(FirebasePlugin);
+		window.FirebasePlugin.createChannel(channel,
 		function(){
 			alert('Channel created: ' + channel.id);
 		},
@@ -25,7 +25,7 @@ var app = {
 		   alert('Create channel error: ' + error);
 		});
 		
-		FirebasePlugin.onMessageReceived(function(message) {
+		window.FirebasePlugin.onMessageReceived(function(message) {
 			console.log("Message type: " + message);
 			if(message.messageType === "notification"){
 				console.log("Notification message received");
