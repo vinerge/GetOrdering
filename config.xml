@@ -8,8 +8,8 @@
         Get Ordering Team
     </author>
     <content src="index.html" />
+	<preference name="phonegap-version" value="cli-9.0.0" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
-		
 	<plugin name="cordova-plugin-firebasex" spec="https://github.com/dpa99c/cordova-plugin-firebase" >
         <variable name="FIREBASE_ANALYTICS_COLLECTION_ENABLED" value="false" />
         <variable name="FIREBASE_PERFORMANCE_COLLECTION_ENABLED" value="false" />

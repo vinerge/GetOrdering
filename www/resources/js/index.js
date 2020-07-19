@@ -7,7 +7,7 @@ var app = {
     onDeviceReady: function() {
 		var channel  = {
 			id: "NewOrder",
-			sound: "NewOrder_Ringtone",
+			//sound: "NewOrder_Ringtone",
 			vibration: [500, 200, 500],
 			light: true,
 			lightColor: parseInt("FF0000FF", 16).toString(),
