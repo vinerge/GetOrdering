@@ -1,17 +1,16 @@
 cordova.define('cordova/plugin_list', function(require, exports, module) {
   module.exports = [
     {
-      "id": "cordova-plugin-fcm-ng.FCMPlugin",
-      "file": "plugins/cordova-plugin-fcm-ng/www/FCMPlugin.js",
-      "pluginId": "cordova-plugin-fcm-ng",
+      "id": "cordova-plugin-thermalprint.Thermalprint",
+      "file": "plugins/cordova-plugin-thermalprint/www/printer.js",
+      "pluginId": "cordova-plugin-thermalprint",
       "clobbers": [
-        "FCMPlugin"
+        "Thermalprint"
       ]
     }
   ];
   module.exports.metadata = {
     "cordova-plugin-whitelist": "1.3.4",
-    "cordova-support-google-services": "1.4.1",
-    "cordova-plugin-fcm-ng": "5.1.1"
+    "cordova-plugin-thermalprint": "1.3.8"
   };
 });

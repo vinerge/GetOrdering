@@ -7,25 +7,21 @@ var app = {
     onDeviceReady: function() {
 		alert('onDeviceReady');
 		
-		FCMPluginNG.onTokenRefresh(function(token){
-			alert( token );
-		});
-		
-		FCMPluginNG.getToken(function(token){
-			alert(token);
-		});
-		
-		//FCMPluginNG.subscribeToTopic('NewOrder');
-		
-		FCMPluginNG.onNotification(function(data){
-			if(data.wasTapped){
-			  //Notification was received on device tray and tapped by the user.
-			  alert( JSON.stringify(data) );
-			}else{
-			  //Notification was received in foreground. Maybe the user needs to be notified.
-			  alert( JSON.stringify(data) );
-			}
-		});
+		window.DatecsPrinter.listBluetoothDevices(
+		  function (devices) {
+			window.DatecsPrinter.connect(devices[0].address, 
+			  function() {
+				window.DatecsPrinter.printText("Print Test!", 'ISO-8859-1');
+			  },
+			  function() {
+				alert(JSON.stringify(error));
+			  }
+			);
+		  },
+		  function (error) {
+			alert(JSON.stringify(error));
+		  }
+		);
     }
 };
 

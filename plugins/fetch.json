@@ -23,18 +23,10 @@
     "is_top_level": false,
     "variables": {}
   },
-  "cordova-support-google-services": {
+  "cordova-plugin-thermalprint": {
     "source": {
       "type": "registry",
-      "id": "cordova-support-google-services@1.4.1"
-    },
-    "is_top_level": true,
-    "variables": {}
-  },
-  "cordova-plugin-fcm-ng": {
-    "source": {
-      "type": "registry",
-      "id": "cordova-plugin-fcm-ng@5.1.1"
+      "id": "cordova-plugin-thermalprint"
     },
     "is_top_level": true,
     "variables": {}

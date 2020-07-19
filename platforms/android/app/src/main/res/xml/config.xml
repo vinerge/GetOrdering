@@ -23,8 +23,7 @@
     <resource-file src="google-services.json" target="app/google-services.json" />
     <preference name="loglevel" value="DEBUG" />
     <preference name="phonegap-version" value="cli-9.0.0" />
-    <feature name="FCMPlugin">
-        <param name="android-package" value="com.gae.scaffolder.plugin.FCMPlugin" />
-        <param name="onload" value="true" />
+    <feature name="Thermalprint">
+        <param name="android-package" value="com.giorgiofellipe.datecsprinter.DatecsPrinter" />
     </feature>
 </widget>
