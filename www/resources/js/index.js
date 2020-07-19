@@ -6,38 +6,26 @@ var app = {
 	
     onDeviceReady: function() {
 		alert('onDeviceReady');
-		var channel  = {
-			id: "NewOrder",
-			//sound: "NewOrder_Ringtone",
-			vibration: [500, 200, 500],
-			light: true,
-			lightColor: parseInt("FF0000FF", 16).toString(),
-			importance: 4,
-			badge: true,
-			visibility: 1
-		};
-		//alert(FirebasePlugin);
-		window.FirebasePlugin.createChannel(channel,
-		function(){
-			alert('Channel created: ' + channel.id);
-		},
-		function(error){
-		   alert('Create channel error: ' + error);
+		
+		FCMPluginNG.onTokenRefresh(function(token){
+			alert( token );
 		});
 		
-		window.FirebasePlugin.onMessageReceived(function(message) {
-			console.log("Message type: " + message);
-			if(message.messageType === "notification"){
-				console.log("Notification message received");
-				if(message.tap){
-					console.log("Tapped in " + message.tap);
-				}
+		FCMPluginNG.getToken(function(token){
+			alert(token);
+		});
+		
+		//FCMPluginNG.subscribeToTopic('NewOrder');
+		
+		FCMPluginNG.onNotification(function(data){
+			if(data.wasTapped){
+			  //Notification was received on device tray and tapped by the user.
+			  alert( JSON.stringify(data) );
+			}else{
+			  //Notification was received in foreground. Maybe the user needs to be notified.
+			  alert( JSON.stringify(data) );
 			}
-			
-		}, function(error) {
-			console.error(error);
 		});
-		
     }
 };
 
